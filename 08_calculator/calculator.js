@@ -13,6 +13,7 @@ const sum = function(array) {
 };
 
 const multiply = function(array) {
+  if (array.length == 0) return 0;
   return array.reduce((cumProd, item) => {
     return cumProd*item;
   }, 1)
